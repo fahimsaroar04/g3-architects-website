@@ -8,3 +8,80 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared style */
+.background{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.display-flex{
+    display: flex;
+}
+.dark-1{
+    color: #131313;
+}
+
+.dark-2{
+    color: #424242;
+}
+.dark-3{
+    color: #727272;
+}
+.btn-primary{
+    background-color: #FF900E;
+    padding: 20px 25px; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+
+
+}
+/* header style */
+
+/* navbar style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 477px;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.brand{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+
+/* banner  style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-link{
+        flex-direction: column;
+    }
+    
+}
