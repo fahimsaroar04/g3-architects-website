@@ -26,6 +26,9 @@
 .dark-3{
     color: #727272;
 }
+.text-primary{
+    color: #FF900E;
+}
 .btn-primary{
     background-color: #FF900E;
     padding: 20px 25px; 
@@ -90,7 +93,7 @@ main > section{
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 20px;
 }
 .our-features{
     margin-left: 130px;
@@ -106,8 +109,36 @@ main > section{
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link{
+    .navbar, .nav-link, .team {
         flex-direction: column;
     }
-    
+
+    .team-img-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-items: center; /* Centers images horizontally in the grid */
+        gap: 10px; /* Space between images */
+        margin: 0px 10px;
+    }
+
+    .team-img-container img {
+        width: 100%; /* Images will take up the full width of the container */
+        max-width: 500px; /* Optional: Set a maximum width for the images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .our-features {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+    .team-img-container{
+        margin: 0 auto;
+    }
 }
